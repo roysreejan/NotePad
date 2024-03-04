@@ -1,8 +1,4 @@
-import NotesView from './NotesView.js';
+import App from "./App.js";
 
-const app = document.getElementById('app');
-const view = new NotesView(app, {
-    onNoteSelect(){
-        console.log('Note selected');
-    }
-});
+const root = document.getElementById("app");
+const app = new App(root);
